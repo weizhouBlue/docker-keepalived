@@ -21,6 +21,7 @@ RUN apk --no-cache add \
     make \
     musl-dev \
     openssl \
+    ipvsadm \
     openssl-dev \
     && curl -o keepalived.tar.gz -SL http://keepalived.org/software/keepalived-${KEEPALIVED_VERSION}.tar.gz \
     && mkdir -p /container/keepalived-sources \
