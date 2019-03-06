@@ -41,7 +41,8 @@ RUN apk --no-cache add \
     libnl3-dev \
     make \
     musl-dev \
-    openssl-dev
+    openssl-dev \
+    ipvsadm
 
 # Add service directory to /container/service
 ADD service /container/service
