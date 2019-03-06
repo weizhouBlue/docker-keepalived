@@ -12,4 +12,5 @@ do
 done
 echo "ok"
 
-exec /usr/local/sbin/keepalived -f /etc/keepalived/keepalived.conf --log-console ${KEEPALIVED_COMMAND_LINE_ARGUMENTS}
+(/etc/keepalived/healthy_monitor.sh) &
+exec /usr/local/sbin/keepalived -f /etc/keepalived/keepalived.conf --dont-fork --log-console ${KEEPALIVED_COMMAND_LINE_ARGUMENTS}  
